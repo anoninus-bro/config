@@ -1,0 +1,13 @@
+-- Autosave: needs to be active immediately
+-- require('user.config.ide.ide.treesitter')
+vim.schedule(function()
+    -- These just register keymaps/autocmds, cheap to load
+    require('user.config.ide.ide.module_require.autosave')
+    require('user.config.ide.ide.module_require.run')
+    require('user.config.ide.ide.whkey')
+    require('user.config.ide.ide.undotree')
+    require('user.config.ide.file.fzf')
+    require('user.config.ide.file.oil')
+    require('user.config.ide.ide.sessions')
+    require('user.config.ide.ide.toggleterm')
+end)
